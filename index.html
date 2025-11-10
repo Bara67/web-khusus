@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Kamu...</title>
+    <style>
+        /* Ini adalah CSS untuk Desain */
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fef9f3;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        header {
+            background-color: #ffdde1; /* Warna pink lembut */
+            padding: 30px;
+        }
+
+        h1 {
+            font-family: 'Caveat', cursive; /* Font tulisan tangan */
+            font-size: 3.5rem;
+            color: #d9534f; /* Warna merah hati */
+            margin: 0;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            font-weight: 600;
+            color: #d9534f;
+        }
+
+        .gallery {
+            margin-top: 30px;
+            border-top: 1px dashed #ddd;
+            padding-top: 30px;
+        }
+
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #555;
+            border-bottom: 2px solid #ffdde1;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .gallery-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .gallery-images img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            aspect-ratio: 1 / 1; /* Membuat gambar kotak */
+            object-fit: cover; /* Memastikan gambar pas */
+        }
+        
+        .placeholder {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .coupons {
+            margin-top: 30px;
+            border-top: 1px dashed #ddd;
+            padding-top: 30px;
+        }
+
+        .coupon {
+            background-color: #fef9f3;
+            border: 2px dashed #ffdde1;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .buttons {
+            margin-top: 40px;
+        }
+
+        button {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 5px;
+        }
+
+        #btn-yes {
+            background-color: #4CAF50; /* Hijau */
+            color: white;
+        }
+        #btn-yes:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        #btn-no {
+            background-color: #f44336; /* Merah */
+            color: white;
+        }
+        #btn-no:hover {
+            background-color: #da190b;
+            transform: scale(1.05);
+        }
+
+        /* Ini untuk pesan pop-up */
+        #message-popup {
+            display: none; /* Sembunyi dulu */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #message-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 300px;
+        }
+        
+        #message-box h3 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Untuk Pacalku Hafidzatul Amanah</h1>
+        </header>
+
+        <main>
+            <section class="apology">
+                <p>
+                    Aku tahu aku salah. Maafin aku ya, aku gatau kamu tadi kenapa, tapi semoga ini bisa bikin kamu lebih happy yaww sayangg. 
+                    <br><br>
+                    Aku nggak mau kamu ngambek lama-lama. Aku buat ini khusus buat kamu, sebagai tanda usahaku. 
+                    Semoga kamu suka ya sayangg <span class="highlight">❤️</span>
+                </p>
+            </section>
+
+            <section class="gallery">
+                <h2>Galeri Kenangan Kita</h2>
+                <div class="gallery-images">
+                    <img src="WhatsApp Image 2025-11-10 at 19.09.32_19fe8c3c.jpg" alt="Foto kenangan 1"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="placeholder" style="display: none;">Foto 1</div>
+                    
+                    <img src="WhatsApp Image 2025-11-10 at 19.08.25_61c56e8f.jpg" alt="Foto kenangan 2"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="placeholder" style="display: none;">Foto 2</div>
+                </div>
+                <p style="font-size: 0.9rem; margin-top: 15px;">
+                    (Kalau fotonya nggak muncul, aku akan kirim langsung di chat ya!)
+                </p>
+            </section>
+
+            <section class="coupons">
+                <h2>Kupon Maaf (Silakan Diklaim!)</h2>
+                <button class="coupon-btn" data-title="Kamu Dapat Kupon!" data-text="Selamat! Kamu berhak dapat 1x Sesi Dengerin Curhat Tanpa Diganggu. Aku janji bakal fokus dengerin kamu.">
+                    Klaim: 1x Sesi Curhat Tanpa Diganggu
+                </button>
+                <button class="coupon-btn" data-title="Kamu Dapat Kupon!" data-text="Selamat! Kamu berhak dapat 1x Pijat Punggung Gratis. Siapin punggungmu, aku bakal pijat sampai kamu bilang cukup!">
+                    Klaim: 1x Pijat Punggung Gratis
+                </button>
+            </section>
+
+            <section class="buttons">
+                <h2>Jadi, apakah kamu memaafkanku?</h2>
+                <button id="btn-yes" class="action-btn">Iya, aku maafin</button>
+                <button id="btn-no" class="action-btn">Belum</button>
+            </section>
+        </main>
+    </div>
+
+    <div id="message-popup">
+        <div id="message-box">
+            <h3 id="message-title">Judul Pop-up</h3>
+            <p id="message-text">Isi pesan pop-up...</p>
+            <button id="btn-close-popup">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        // Ini adalah JavaScript untuk Tombol (MODIFIKASI)
+
+        // Referensi elemen pop-up
+        const popup = document.getElementById('message-popup');
+        const msgTitle = document.getElementById('message-title');
+        const msgText = document.getElementById('message-text');
+        const btnClose = document.getElementById('btn-close-popup');
+
+        // Fungsi untuk menampilkan pop-up
+        function showMessage(title, text) {
+            msgTitle.innerText = title;
+            msgText.innerText = text;
+            popup.style.display = 'flex';
+        }
+
+        // Fungsi untuk menyembunyikan pop-up
+        function hideMessage() {
+            popup.style.display = 'none';
+        }
+        
+        // Event listener untuk tombol tutup pop-up
+        btnClose.addEventListener('click', hideMessage);
+
+        // --- Event Listener untuk Tombol Yes/No ---
+        const btnYes = document.getElementById('btn-yes');
+        const btnNo = document.getElementById('btn-no');
+
+        btnYes.addEventListener('click', function() {
+            showMessage(
+                'Makasih Banyak! ❤️', 
+                'Makasih udah maafin aku. Aku janji akan jadi lebih baik lagi. Love you!'
+            );
+        });
+
+        btnNo.addEventListener('click', function() {
+            showMessage(
+                'Oke, Aku Paham...', 
+                'Nggak apa-apa kalau kamu masih butuh waktu. Aku akan tunggu. Aku tetap sayang kamu.'
+            );
+        });
+
+        // --- Event Listener untuk TomBOL KUPON (BARU) ---
+        const couponButtons = document.querySelectorAll('.coupon-btn');
+
+        couponButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Ambil data dari atribut 'data-' di tombol
+                const title = this.getAttribute('data-title');
+                const text = this.getAttribute('data-text');
+                
+                // Tampilkan di pop-up
+                showMessage(title, text);
+            });
+        });
+    </script>
+
+</body>
+</html>
